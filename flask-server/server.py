@@ -21,7 +21,6 @@ def cleanup_queue(queue):
     def remove_lower_priority_tickets(user_tickets):
         if len(user_tickets) > 1:
             sorted_tickets = sorted(user_tickets, key=sort_by_status,reverse=True)
-            app.logger.debug(sorted_tickets)
             for ticket in sorted_tickets[1:]:
                 queue.remove(ticket)
     
