@@ -14,7 +14,7 @@ function Client() {
         data['status']='new';
         const req = JSON.stringify(data, null, 2);
         console.log(req);
-        axios.post('add_q', req, {
+        axios.post('http://lukaselsrode.pythonanywhere.com/add_q', req, {
             headers: {
                 'Content-Type': 'application/json'
             }
