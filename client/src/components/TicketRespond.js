@@ -13,7 +13,7 @@ const TicketResponse = () => {
         e.preventDefault();
 
         console.log(`Sending email to ${email} - Dear ${name}, your issue is ${status} \n  ${response} \n Best Regards,\n IT-Services`);  
-        axios.post('http://lukaselsrode.pythonanywhere.com/add_q',  {
+        axios.post('https://lukaselsrode.pythonanywhere.com/add_q',  {
             'name':name,
             'status':status,
             'description':description,

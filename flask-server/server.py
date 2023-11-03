@@ -1,9 +1,9 @@
 from flask import Flask,jsonify
-from flask_cors import CORS
+#from flask_cors import CORS
 from flask import request
 
 app = Flask(__name__)
-CORS(app)
+#CORS(app) - for dev not in prod
 
 app.config['TESTING'] = True
 app.config['DEBUG'] = True

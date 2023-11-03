@@ -31,7 +31,7 @@ function useTickets() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://lukaselsrode.pythonanywhere.com/get_q')
+    axios.get('https://lukaselsrode.pythonanywhere.com/get_q')
       .then(response => {
         setData(response.data);
         console.log(response.data);
